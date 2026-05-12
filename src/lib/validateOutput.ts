@@ -20,7 +20,7 @@ function isCampaignPlan(val: unknown): val is CampaignPlan {
     return typeof c.channel === "string" && typeof c.angle === "string" && typeof c.format === "string"
   })) return false
 
-  if (!Array.isArray(v.metrics) || v.metrics.length === 0) return false
+  if (!Array.isArray(v.metrics)) return false
   if (!v.metrics.every((m) => typeof m === "string")) return false
 
   if (!Array.isArray(v.risks)) return false
