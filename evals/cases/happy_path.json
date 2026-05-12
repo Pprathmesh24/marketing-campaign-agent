@@ -1,0 +1,14 @@
+{
+  "brief": {
+    "productName": "Notion for engineering teams",
+    "productDescription": "A flexible workspace that replaces Jira, Confluence, and scattered docs — built for eng teams who want project tracking and documentation in one place without the bloat of enterprise tooling",
+    "audience": "Senior engineers and engineering managers at Series B startups who own their own tooling budget and are frustrated with context switching between tools",
+    "goal": "consideration",
+    "channels": ["social", "content"],
+    "tone": "authoritative"
+  },
+  "expect": {
+    "status": 200,
+    "mode": "plan"
+  }
+}

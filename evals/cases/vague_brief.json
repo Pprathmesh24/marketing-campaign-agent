@@ -1,0 +1,14 @@
+{
+  "brief": {
+    "productName": "a software tool",
+    "productDescription": "it helps businesses",
+    "audience": "people",
+    "goal": "awareness",
+    "channels": ["social"],
+    "tone": "professional"
+  },
+  "expect": {
+    "status": 200,
+    "mode": "clarify"
+  }
+}
