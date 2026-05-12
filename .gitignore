@@ -43,9 +43,10 @@ next-env.d.ts
 # claude code
 .claude/
 
-# markdown files (internal docs — keep only README)
+# markdown files (internal docs — keep only README and prompt reasoning)
 *.md
 !README.md
+!prompts/system-prompt-reasoning.md
 
 # python evals venv
 evals/marketing_agent/
