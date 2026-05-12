@@ -103,7 +103,7 @@ export function BriefForm({ onResult, initialValues }: Props) {
         <form onSubmit={handleSubmit} className="flex flex-col gap-6">
 
           <div className="flex flex-col gap-3">
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-500">Product</h3>
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Product</h3>
 
             <div className="flex flex-col gap-1.5">
               <Label htmlFor="productName" className="text-sm font-medium">

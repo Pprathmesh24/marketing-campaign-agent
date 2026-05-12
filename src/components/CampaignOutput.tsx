@@ -62,14 +62,14 @@ export function CampaignOutput({ plan, onReset }: Props) {
         </Button>
       </div>
 
-      <Card className="bg-amber-50 border border-amber-200 shadow-none">
+      <Card className="bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 shadow-none">
         <CardHeader className="pb-2">
-          <CardTitle className="text-xs font-semibold uppercase tracking-wider text-amber-700">
+          <CardTitle className="text-xs font-semibold uppercase tracking-wider text-amber-700 dark:text-amber-400">
             Audience insight
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-sm leading-relaxed text-amber-900">{plan.insight}</p>
+          <p className="text-sm leading-relaxed text-amber-900 dark:text-amber-200">{plan.insight}</p>
         </CardContent>
       </Card>
 
@@ -98,12 +98,12 @@ export function CampaignOutput({ plan, onReset }: Props) {
         {plan.channelPlan.map((ch) => (
           <Card key={ch.channel} className="border-l-4 border-l-indigo-500 rounded-l-none shadow-none">
             <CardHeader className="pb-1">
-              <CardTitle className="text-sm font-semibold capitalize text-slate-800">
+              <CardTitle className="text-sm font-semibold capitalize text-slate-800 dark:text-slate-200">
                 {ch.channel}
               </CardTitle>
             </CardHeader>
             <CardContent className="flex flex-col gap-1 pt-0">
-              <p className="text-sm leading-relaxed text-slate-700">{ch.angle}</p>
+              <p className="text-sm leading-relaxed text-slate-700 dark:text-slate-300">{ch.angle}</p>
               <p className="text-xs text-muted-foreground mt-1">
                 <span className="font-medium">Format:</span> {ch.format}
               </p>
@@ -113,16 +113,16 @@ export function CampaignOutput({ plan, onReset }: Props) {
       </div>
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <Card className="bg-emerald-50/50 border border-emerald-200 shadow-none">
+        <Card className="bg-emerald-50/50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800 shadow-none">
           <CardHeader className="pb-2">
-            <CardTitle className="text-xs font-semibold uppercase tracking-wider text-emerald-700">
+            <CardTitle className="text-xs font-semibold uppercase tracking-wider text-emerald-700 dark:text-emerald-400">
               Metrics
             </CardTitle>
           </CardHeader>
           <CardContent>
             <ul className="flex flex-col gap-2">
               {plan.metrics.map((m, i) => (
-                <li key={i} className="flex gap-2 text-sm text-emerald-900">
+                <li key={i} className="flex gap-2 text-sm text-emerald-900 dark:text-emerald-200">
                   <span className="text-emerald-400 shrink-0 font-bold">—</span>
                   <span>{m}</span>
                 </li>
@@ -131,16 +131,16 @@ export function CampaignOutput({ plan, onReset }: Props) {
           </CardContent>
         </Card>
 
-        <Card className="bg-orange-50/50 border border-orange-200 shadow-none">
+        <Card className="bg-orange-50/50 dark:bg-orange-950/30 border border-orange-200 dark:border-orange-800 shadow-none">
           <CardHeader className="pb-2">
-            <CardTitle className="text-xs font-semibold uppercase tracking-wider text-orange-700">
+            <CardTitle className="text-xs font-semibold uppercase tracking-wider text-orange-700 dark:text-orange-400">
               Risks
             </CardTitle>
           </CardHeader>
           <CardContent>
             <ul className="flex flex-col gap-2">
               {plan.risks.map((r, i) => (
-                <li key={i} className="flex gap-2 text-sm text-orange-900">
+                <li key={i} className="flex gap-2 text-sm text-orange-900 dark:text-orange-200">
                   <span className="text-orange-400 shrink-0 font-bold">—</span>
                   <span>{r}</span>
                 </li>
