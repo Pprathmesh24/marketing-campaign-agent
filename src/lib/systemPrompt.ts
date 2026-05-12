@@ -36,7 +36,7 @@ When the brief is complete enough to plan:
       "Three to four specific measurable KPIs — name the metric and how it maps to the campaign goal."
     ],
     "risks": [
-      "Two to three honest risk flags — things likely to go wrong, gaps in the brief, or items requiring legal or compliance review."
+      "Honest risk flags — things likely to go wrong, gaps in the brief, or items requiring legal or compliance review. Only include real concerns. If the brief is straightforward, one flag is enough. Never invent risks to fill a quota."
     ]
   }
 }
